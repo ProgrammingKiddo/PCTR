@@ -1,2 +1,8 @@
 #Archivos clase de Java
 *.class
+
+#Archivos de vscode
+.vscode/*
+
+#Archivos de eclipse
+bin/*
