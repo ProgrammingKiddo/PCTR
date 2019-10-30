@@ -38,11 +38,11 @@ public class escalaVectorParalelo implements Runnable{
 		int escalarLocal, vectorSize;
 
 		teclado = new Scanner(System.in);
-		vectorSize = 10000;
+		vectorSize = 1000000;
 		v = new int[vectorSize];
 		
 		inicializarVector();
-		imprimirVector();
+		//imprimirVector();
 
 		
 		System.out.println("Introduce el escalar: ");
@@ -71,7 +71,7 @@ public class escalaVectorParalelo implements Runnable{
 			System.err.println(ex.toString());
 		}
 
-		imprimirVector();
+		//imprimirVector();
 		teclado.close();
 	}
 

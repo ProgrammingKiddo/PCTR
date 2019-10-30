@@ -2,7 +2,7 @@
 *.class
 
 #Archivos de vscode
-.vscode/*
+.vscode/
 
 #Archivos de eclipse
 bin/*
