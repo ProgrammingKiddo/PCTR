@@ -1,9 +1,11 @@
 package P3.e2;
 
+import java.util.Random;
+
 class matVector
 {
 
-    private static int tamanho = 1000000;
+    private static int tamanho = 10000;
     private static int[][] matriz = new int[tamanho][tamanho];
     private static int[] vectorOrigen = new int[tamanho];
     private static int[] vectorProducto = new int[tamanho];
@@ -11,14 +13,15 @@ class matVector
     public static void main(String[] args)
     {
         int suma;
+        Random rand = new Random();
 
         for (int i = 0; i < tamanho; i++)
         {
             for (int j = 0; j < tamanho; j++)
             {
-                matriz[i][j] = 1;
+                matriz[i][j] = rand.nextInt(3);
             }
-            vectorOrigen[i] = 1;
+            vectorOrigen[i] = rand.nextInt(3);
         }
 
         for (int i = 0; i < tamanho; i++)
@@ -31,7 +34,6 @@ class matVector
             vectorProducto[i] = suma;
             System.out.println(suma);
         }
-
         
     }
 }
